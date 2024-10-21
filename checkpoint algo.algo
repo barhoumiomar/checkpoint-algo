@@ -1,0 +1,34 @@
+DEBUT
+    // Initialisation des compteurs
+    longueur <- 0
+    nombre_de_mots <- 1  // On commence à 1 car le dernier mot n'est pas suivi d'un espace
+    nombre_de_voyelles <- 0
+    
+    // Ensemble des voyelles
+    voyelles <- ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    
+    // Lire la phrase de l'utilisateur
+    ECRIRE "Entrez une phrase qui se termine par un point : "
+    LIRE phrase
+    
+    // Pour chaque caractère dans la phrase
+    POUR chaque caractere DANS phrase FAIRE
+        longueur <- longueur + 1  // Incrémenter la longueur à chaque caractère
+        
+        // Si le caractère est un espace
+        SI caractere = ' ' ALORS
+            nombre_de_mots <- nombre_de_mots + 1  // Incrémenter le nombre de mots
+        FIN SI
+        
+        // Si le caractère est une voyelle
+        SI caractere DANS voyelles ALORS
+            nombre_de_voyelles <- nombre_de_voyelles + 1  // Incrémenter le nombre de voyelles
+        FIN SI
+    FIN POUR
+    
+    // Afficher les résultats
+    ECRIRE "Longueur de la phrase : ", longueur
+    ECRIRE "Nombre de mots : ", nombre_de_mots
+    ECRIRE "Nombre de voyelles : ", nombre_de_voyelles
+    
+FIN
