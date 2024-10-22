@@ -6,7 +6,7 @@ VAR
     voyelles := ['a', 'e', 'i', 'o', 'u' ,'y', 'A', 'E', 'I', 'O', 'U', 'Y'] ;
 BEGIN
 
-    write "Entrez une phrase qui se termine par un point : ";
+    write ("Entrez une phrase qui se termine par un point : ");
     Read ch;    
     
     FOR i FROM 0 TO length(ch)-1 STEP 1 DO
