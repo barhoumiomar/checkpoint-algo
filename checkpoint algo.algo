@@ -1,9 +1,9 @@
 ALGORITHM chaine_caractere
 VAR
-    longueur := 0;
-    nombre_de_mots := 0;
-    nombre_de_voyelles := 0;
-    voyelles := ['a', 'e', 'i', 'o', 'u' ,'y', 'A', 'E', 'I', 'O', 'U', 'Y'] ;
+    int : longueur := 0;
+    int : nombre_de_mots := 0;
+    int : nombre_de_voyelles := 0;
+    char: voyelles := ['a', 'e', 'i', 'o', 'u' ,'y', 'A', 'E', 'I', 'O', 'U', 'Y'] ;
 BEGIN
     do
         write ("Entrez une phrase qui se termine par un point : ");
